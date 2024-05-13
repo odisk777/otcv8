@@ -14,9 +14,9 @@ Services = {
 }
 
 -- Servers accept http login url, websocket login url or ip:port:version
-Servers = {
-  LocalTestServ = "127.0.0.1:7171:1100"
-}
+Servers = {}
+
+-- edit ip in entergame.lua 
 
 --Server = "ws://yourwebsite:3000/"
 --Server = "ws://127.0.0.1:88/"
