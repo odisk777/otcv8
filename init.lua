@@ -10,13 +10,11 @@ Services = {
   stats = "", -- --"http://yourwebsite/api/stats.php"
   crash = "", --"http://yourwebsite/api/crash.php",
   feedback = "",--"http://yourwebsite/api/feedback.php",
-  status = "http://docs.opentibiabr.com" --http://yourwebsite/api/status.php"
+  status = "" --http://yourwebsite/api/status.php"
 }
 
 -- Servers accept http login url, websocket login url or ip:port:version
-Servers = {
-  LocalTestServ = "127.0.0.1:7171:1100"
-}
+Servers = {}
 
 --Server = "ws://yourwebsite:3000/"
 --Server = "ws://127.0.0.1:88/"

@@ -40,8 +40,10 @@ local function tryLogin(charInfo, tries)
                                 end })
 
   -- save last used character
-  g_settings.set('last-used-character', charInfo.characterName)
-  g_settings.set('last-used-world', charInfo.worldName)
+  if (G.account ~= '') then
+    g_settings.set('last-used-character', charInfo.characterName)
+    g_settings.set('last-used-world', charInfo.worldName)
+  end
 end
 
 local function updateWait(timeStart, timeEnd)

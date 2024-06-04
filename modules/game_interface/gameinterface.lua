@@ -172,6 +172,11 @@ function hide()
 end
 
 function save()
+
+  if G.account == "" then -- cast
+    return
+  end
+  
   local settings = {}
   settings.splitterMarginBottom = bottomSplitter:getMarginBottom()
   g_settings.setNode('game_interface', settings)
